@@ -1,6 +1,10 @@
-# desyncdotdev/renovate-config
+# desyncdotdev/shared
 
-`default.json` is the org-wide Renovate preset for desyncdotdev repositories:
+Shared configuration for desyncdotdev repositories.
+
+## Renovate
+
+`default.json` is the org-wide Renovate preset:
 
 - `config:recommended`
 - GitHub Actions pinned to digests (`helpers:pinGitHubActionDigests`)
@@ -12,6 +16,6 @@ To use it, extend it in a repo's `renovate.json` and add repo-specific settings 
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>desyncdotdev/renovate-config"]
+  "extends": ["local>desyncdotdev/shared"]
 }
 ```
